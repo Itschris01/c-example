@@ -2,17 +2,19 @@
 #include "9-encabezados.h"
 
 int main() {
-
+    // Declarando variable
+    int resultadoF4;
     int v;
 
     // Llama a las 3 funciones
     funcion1();
     funcion2(5, 2.67);
-    v = funcion3(10);
-
+    v = funcion3(10); 
+    // Llamado a la funcion
+    resultadoF4 =funcion4(7);
     // Imprime el valor que retornó funcion3()
     printf("v = %d\n", v);
-
+    printf("resultadoF4 = %d\n", resultadoF4);
     return 0;
 
 }
@@ -33,5 +35,11 @@ void funcion2(int a, float b) {
 int funcion3(int x) {
     printf("En funcion3()...\n");
     int y = x + 2;
+    return y;
+}
+// Implementacion de la funcion4
+int funcion4(int x) {
+    printf("En funcion4()...\n");
+    int y = x - 2;
     return y;
 }
